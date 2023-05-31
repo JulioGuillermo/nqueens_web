@@ -13,9 +13,9 @@ func GetApp() *app.Handler {
 
 	a := &app.Handler{
 		Icon: app.Icon{
-			Default:    "/web/assets/icon_192.png",
-			Large:      "/web/assets/icon.png",
-			AppleTouch: "/web/assets/icon_192.png",
+			Default:    "web/assets/icon_192.png",
+			Large:      "web/assets/icon.png",
+			AppleTouch: "web/assets/icon_192.png",
 		},
 		Title:           "NQueens",
 		Name:            "NQueens",
@@ -23,18 +23,18 @@ func GetApp() *app.Handler {
 		BackgroundColor: "#FFFFFF",
 		ThemeColor:      "#0088ff",
 		Version:         "0.0.1",
-		Image:           "/web/assets/icon.png",
+		Image:           "web/assets/icon.png",
 		Author:          "Julio Guillermo Mayo Vidal",
 		Description:     "NQueens web",
 		Styles: []string{
-			"/web/assets/material-icon.css",
-			"/web/assets/materialize.min.css",
-			"/web/assets/style.css",
+			"web/assets/material-icon.css",
+			"web/assets/materialize.min.css",
+			"web/assets/style.css",
 		},
 		Scripts: []string{
-			"/web/assets/materialize.min.js",
-			"/web/assets/particles.min.js",
-			"/web/assets/particles_init.js",
+			"web/assets/materialize.min.js",
+			"web/assets/particles.min.js",
+			"web/assets/particles_init.js",
 		},
 		CacheableResources: GetResources("web/"),
 	}

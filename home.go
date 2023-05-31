@@ -125,7 +125,7 @@ func (p *Home) Render() app.UI {
 							Body(
 								app.Img().
 									Class("responsive-img").
-									Src("/web/assets/background.jpeg"),
+									Src("web/assets/background.jpeg"),
 							),
 						app.Div().
 							Style("position", "absolute").
@@ -136,7 +136,7 @@ func (p *Home) Render() app.UI {
 								app.Img().
 									Class("responsive-img").
 									Style("width", "1cm").
-									Src("/web/assets/icon.png"),
+									Src("web/assets/icon.png"),
 							),
 						app.Div().
 							Style("position", "absolute").
