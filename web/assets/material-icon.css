@@ -3,7 +3,7 @@
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(material-icon-font.woff2) format("woff2");
+  src: url(/nqueens_web/web/assets/material-icon-font.woff2) format("woff2");
 }
 
 .material-icons {
