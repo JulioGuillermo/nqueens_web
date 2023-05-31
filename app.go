@@ -9,6 +9,7 @@ import (
 
 func GetApp() *app.Handler {
 	app.Route("/", &Home{})
+	app.RouteWithRegexp("/.*", &Home{})
 	app.RunWhenOnBrowser()
 
 	a := &app.Handler{
