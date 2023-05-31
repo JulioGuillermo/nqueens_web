@@ -1,0 +1,105 @@
+:root {
+  --primary: #08f;
+  --secondary: #8ff;
+  --background: #fff;
+}
+
+.primary {
+  background: var(--primary);
+  color: var(--background);
+}
+
+.primary-text {
+  color: var(--primary) !important;
+}
+
+.secondary {
+  background: var(--secondary);
+}
+
+#drawer > li > .input-field {
+  margin-top: 0.3cm;
+  margin-left: 0.3cm;
+  margin-right: 0.3cm;
+}
+
+#drawer #title {
+  color: var(--background);
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #000;
+}
+
+.card,
+svg {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1cm;
+  backdrop-filter: blur(5px);
+}
+
+svg {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: var(--primary);
+}
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: var(--secondary);
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: var(--primary);
+}
+
+.input-field input:focus + label {
+  color: var(--primary) !important;
+}
+.file-path,
+.input-field input:focus {
+  border-bottom: 1px solid var(--primary) !important;
+  box-shadow: 0 1px 0 0 var(--primary) !important;
+}
+.prefix.active {
+  color: var(--primary) !important;
+}
+
+#particles-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#drawer {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+main {
+  padding-top: 1cm;
+  padding-left: 300px;
+}
+
+.navbar-fixed nav {
+  width: auto;
+  left: 300px;
+  right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-left: 0;
+  }
+  .navbar-fixed nav {
+    left: 0;
+    right: 0;
+  }
+  #drawer {
+    background: #fff;
+  }
+}
